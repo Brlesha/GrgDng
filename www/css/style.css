@@ -1,0 +1,312 @@
+@charset 'UTF-8'
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: 'mason';
+}
+/* блок импорта шрифтов */
+@font-face {
+	font-family: 'brahms';
+	src: url('../fonts/Brahms_Gotisch/Brahms_Gotisch.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	text-indent: 0px;
+}
+
+@font-face {
+	font-family: 'mason';
+	src: url('../fonts/Mason _Chronicles/masonchronicles3.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	text-indent: 0px;
+}
+
+@font-face {
+	font-family: 'algeria';
+	src: url('../fonts/Algeria/3227-font.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	text-indent: 0px;
+}
+
+html {height: 100%}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: all.1s ease;
+    -webkit- transition: all.1s ease;
+    -ms- transition: all.1s ease;
+}
+
+a:hover {
+    color: №fc89ac;
+    text-decoration: none;
+    transition: all.6s ease;
+    -webkit- transition: all.6s ease;
+    -ms- transition: all.6s ease;
+}
+
+a:active {color: #cd4a4c;}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right {float: right}
+.left {float: left}
+.clear {clear: both}
+
+/* Selection block */
+::selection {background: #fd7c6e; color: #0f0}
+::-moz-selection {background: #fd7c6e; color: #000}
+
+    {
+    width: 98%;
+    background: none;
+    float: left;
+}
+
+.header {
+    max-width: 1170px;
+    border-bottom: 1px solid white;
+    margin-top: 30px;
+    text-shadow: 1px 0 1px #00000082, 
+    0 1px 1px #00000082, 
+    -1px 0 1px #00000082, 
+    0 -1px 1px #00000082;
+}
+
+.footer {
+    max-width: 1170px;
+    border-top: 1px solid white;
+    margin-top: 4px;
+    padding: 1%;
+    padding-bottom: 2%;
+    text-shadow: 1px 0 1px #00000082, 
+    0 1px 1px #00000082, 
+    -1px 0 1px #00000082, 
+    0 -1px 1px #00000082;
+}
+.footer, .wrapper:after {
+    height: 10px;
+}
+
+footer img {width: 15%; float: left; margin-right: -66px}
+
+body {
+    color: #fff; /*Цвет текста на странице*/
+    text-indent: 50px;
+    margin-top: 2px;
+    height: 100%;
+    width: auto;
+    padding: 1px;
+    font-family: "mason", sans-serif;
+    font-size: 1em;
+    line-height: 200%;
+    background: url(../img/20231123234238_1.png); /* Фоновый цвет и фоновый рисунок*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no_repeat; /* Изображение не повторяется */
+    text-shadow: 1px 0 1px #00000082, 
+    0 1px 1px #00000082, 
+    -1px 0 1px #00000082, 
+    0 -1px 1px #00000082;
+}
+
+
+.wrapper {
+    width: 90%;
+    max-width: 1170px;
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top -200px;
+    margin-bottom: -10px;
+    display: flex;
+    flex-direction: column;
+    font-family: "mason", sans-serif;
+}
+.wrapper:after {
+    content: '';
+    display: block;
+}
+
+.wrapper-main {
+    margin-top: px;
+    margin-bottom: px;
+    text-align: center;
+    align-items: center;
+}
+
+#logo {
+    font-size: 5em;
+    font-family: 'brahms', Courier New;
+}
+
+.contact {
+    font-size: 3em;
+    font-family: 'brahms';
+    margin-left: 40px;
+}
+
+.text{
+    font-size: 22px;
+    text-indent: 0px;
+    margin: 0px;
+}
+
+.underline{
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+}
+
+/* стили для input */
+
+/* 1 – Изменим стили шрифтов */
+/* 2 – Удалим margin в Firefox и Safari */
+input[type="text"] {
+    font-family: 'algeria'; /* 1 */
+    font-size: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+    margin: 0; /* 2 */
+    }
+
+/* установим отступ 1rem от нижнего края элемента */
+.text-field {
+    margin-bottom: 1rem;
+    }
+  /* стили для label */
+    .text-field__label {
+    display: block;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 0px;
+    margin-bottom: 0.25rem;
+    }
+
+  /* стили для input */
+    .text-field__input {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+.text-field__input::placeholder {
+    color: #212529;
+    opacity: 0.4;
+    }
+.text-field__input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+    }
+
+    /*стили для контейнеров*/
+
+.content {
+    width: 40%;
+    margin-left: 10%;
+    padding: 0px;
+    font-size: 1.5em;
+    text-align: justify;
+    /*background-color: rgba(0, 0, 0, 0.1);
+    background-size: content;
+    border-radius: 50px;*/
+}
+
+.reg {
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-indent: 0px;
+    text-align: left;
+    width: 27%;
+    margin: 10px;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 7%;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    /*background-color: rgba(0, 0, 0, 0.1);
+    background-size: content;
+    border-radius: 50px;*/
+}
+
+/* стили для кнопки */
+.btn {
+    text-indent: 0px;
+    margin: 0%;
+    margin-top: 1rem;
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.btn-one {
+	transition: all 0.3s;
+	position: relative;
+}
+.btn-one span {
+	transition: all 0.3s;
+}
+.btn-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+	transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+	letter-spacing: 2px;
+}
+.btn-one:hover::before {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+.btn-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255, 255, 255, 0.153);
+}
+.btn-one:hover::after {
+	opacity: 0;
+	transform: scale(0.1, 1);
+}
+
+.main {
+    padding: 30px;
+    flex: 1 1 auto;
+}
+
